@@ -1,10 +1,12 @@
 <script lang="ts">
+  import { Button } from "$components/ui/button";
+
   export let y;
 
   const tabs = [
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
   ];
 </script>
 
@@ -12,12 +14,14 @@
   class={"top-0 duration-200 px-6 flex items-center justify-between " +
     (y > 0 ? " py-4 bg-slate-950" : " py-6 bg-transparent border-transparent")}
 >
-  <h1 class="poppins text-xl">
-    <b class="font-bold text-green-400">christian</b>mack
-  </h1>
+  <a href="/" class="cursor-pointer">
+    <h1 class="poppins text-2xl">
+      <b class="font-bold text-green-400">christian</b>mack
+    </h1>
+  </a>
   <div class="sm:flex items-center gap-4 hidden">
     {#each tabs as tab, index}
-      <a href={tab.href} class="duration-200 hover:text-violet-400">
+      <a href={tab.href} class="duration-200 hover:text-green-400">
         <p>{tab.name}</p>
       </a>
     {/each}
