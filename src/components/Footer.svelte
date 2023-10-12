@@ -8,7 +8,7 @@
     <div
       class="flex flex-col lg:flex-row justify-between items-start w-full mb-4"
     >
-      <p class=" text-slate-500 text-md lg:text-2xl mb-6 font-semibold">
+      <p class=" text-slate-500 text-md lg:text-2xl mb-6">
         Stay connected with me.
       </p>
       <input
@@ -18,10 +18,12 @@
       />
     </div>
     <div
-      class="flex flex-col lg:flex-row lg:justify-between w-full items-center mb-8"
+      class="flex flex-col lg:flex-row lg:justify-between w-full items-center mb-8 mt-10"
     >
-      <div class="flex flex-col w-full lg:w-3/5 mt-10">
-        <p class="text-5xl mb-2 font-bold">CM</p>
+      <div class="flex flex-col w-full lg:w-3/5">
+        <p class="text-5xl mb-2 font-bold">
+          <b class="text-green-400">christian</b>mack
+        </p>
         <p class="text-xl mt-2 font-semibold text-slate-300">
           A freelance software developer based in Maryland.
         </p>
@@ -44,11 +46,10 @@
       </div>
     </div>
     <div
-      class="flex justify-center lg:justify-start w-full text-xs lg:text-base"
+      class="flex justify-center lg:justify-start w-full text-xs lg:text-base mt-10"
     >
-      <p class="font-light">
-        © 2023 <b class="text-green-500 font-extrabold">Christian Mack.</b> All rights
-        reserved.
+      <p class="font-light text-slate-600 text-sm">
+        © 2023 Christian Mack All rights reserved.
       </p>
     </div>
   </div>

@@ -12,8 +12,8 @@
   class={"top-0 duration-200 px-6 flex items-center justify-between " +
     (y > 0 ? " py-4 bg-slate-950" : " py-6 bg-transparent border-transparent")}
 >
-  <h1 class="font-medium">
-    <b class="font-bold poppins">Christian</b> Mack
+  <h1 class="poppins text-xl">
+    <b class="font-bold text-green-400">christian</b>mack
   </h1>
   <div class="sm:flex items-center gap-4 hidden">
     {#each tabs as tab, index}
