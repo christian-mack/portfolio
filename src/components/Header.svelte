@@ -11,7 +11,7 @@
 </script>
 
 <header
-  class={"top-0 duration-200 px-6 flex items-center justify-between " +
+  class={"top-0 duration-200 flex items-center justify-between " +
     (y > 0 ? " py-4 bg-slate-950" : " py-6 bg-transparent border-transparent")}
 >
   <a href="/" class="cursor-pointer">
