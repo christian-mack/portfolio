@@ -1,5 +1,7 @@
-<script>
-  import Projects from "$components/Projects.svelte";
+<script lang="ts">
+  //
 </script>
 
-<Projects />
+<section>
+  <h1>Projects Page</h1>
+</section>
