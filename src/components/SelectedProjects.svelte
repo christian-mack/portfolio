@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { Button } from "$components/ui/button";
   import * as Accordion from "$components/ui/accordion";
 </script>

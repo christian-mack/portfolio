@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { Instagram, Github, Linkedin } from "lucide-svelte";
   import { Button } from "$components/ui/button";
 </script>

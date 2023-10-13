@@ -1,4 +1,4 @@
-<script lang="ts"></script>
+<script></script>
 
 <section>
   <div><h1>Contact</h1></div>

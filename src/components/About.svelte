@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   let benefits = [
     {
       name: "a self-taught developer",
