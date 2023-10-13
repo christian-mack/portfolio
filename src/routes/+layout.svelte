@@ -2,6 +2,7 @@
   import "../app.css";
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
+  import PreFooter from "../components/PreFooter.svelte";
 
   let y;
   let innerWidth = 0;
@@ -18,6 +19,7 @@
   <Header {y} />
   <slot />
 </div>
+<PreFooter />
 <Footer />
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
