@@ -1,32 +1,7 @@
 <script>
   import { Button } from "$components/ui/button";
-
-  let benefits = [
-    {
-      name: "a self-taught developer",
-      description:
-        "I am a full stack developer with a passion for building beautiful, functional, and responsive web applications.",
-      icon: "fa-solid fa-laptop-code",
-    },
-    {
-      name: "a problem solver",
-      description:
-        "I love solving problems and learning new things. I am always looking for ways to improve my skills and knowledge.",
-      icon: "fa-solid fa-lightbulb-on",
-    },
-    {
-      name: "a team player",
-      description:
-        "I am a team player who is always willing to help others and work together to achieve a common goal.",
-      icon: "fa-solid fa-users",
-    },
-    {
-      name: "a lifelong learner",
-      description:
-        "I am a lifelong learner who is always looking for ways to improve my skills and knowledge.",
-      icon: "fa-solid fa-book",
-    },
-  ];
+  import AboutImage from "$lib/assets/aboutplaceholder.jpeg";
+  import ScrollText from "./ScrollText.svelte";
 </script>
 
 <section id="about" class="py-12">
@@ -51,5 +26,12 @@
         >Let's Talk &rarr;</Button
       >
     </div>
+  </div>
+  <div class="py-12">
+    <img src={AboutImage} alt="randomly generated" class="rounded-[24px]" />
+  </div>
+  <ScrollText />
+  <div>
+    <h3>My Experience</h3>
   </div>
 </section>
