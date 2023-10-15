@@ -1,6 +1,6 @@
 <script>
   import { Button } from "$components/ui/button";
-  import Projects from "$components/SelectedProjects.svelte";
+  import SelectedProjects from "$components/SelectedProjects.svelte";
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -21,5 +21,5 @@
     </div>
   </section>
 
-  <Projects />
+  <SelectedProjects />
 </main>
