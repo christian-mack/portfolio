@@ -1,7 +1,22 @@
 <script>
   import { Button } from "$components/ui/button";
+  import * as Table from "$components/ui/table";
   import AboutImage from "$lib/assets/aboutplaceholder.jpeg";
   import ScrollText from "./ScrollText.svelte";
+
+  const experiences = [
+    {
+      title: "Full Stack Developer",
+      company: "Maverick Digital Solutions",
+      dates: "2020 - 2021",
+    },
+    { title: "Web Developer", company: "Prime Trust", dates: "2021 - 2022" },
+    {
+      title: "Front-End Developer",
+      company: "Foreign Languages for Kids",
+      dates: "2022 - 2023",
+    },
+  ];
 </script>
 
 <section id="about" class="py-12">
@@ -31,7 +46,32 @@
     <img src={AboutImage} alt="randomly generated" class="rounded-[24px]" />
   </div>
   <ScrollText />
-  <div>
-    <h3>My Experience</h3>
+  <div class="my-28">
+    <h3 class="text-5xl font-semibold mb-12 text-green-400">My Experience</h3>
+    <Table.Root>
+      <!-- <Table.Caption>A list of your recent invoices.</Table.Caption> -->
+      <Table.Header>
+        <Table.Row />
+      </Table.Header>
+      <Table.Body>
+        {#each experiences as experience}
+          <Table.Row class="hover:bg-transparent">
+            <Table.Cell
+              class="font-medium flex w-full justify-between items-end py-8 px-0"
+            >
+              <div>
+                <p class="mb-3 text-2xl font-medium">{experience.title}</p>
+                <p class="text-lg font-light text-slate-300">
+                  {experience.company}
+                </p>
+              </div>
+              <p class="text-lg text-slate-300">
+                {experience.dates}
+              </p></Table.Cell
+            >
+          </Table.Row>
+        {/each}
+      </Table.Body>
+    </Table.Root>
   </div>
 </section>
