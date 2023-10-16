@@ -1,6 +1,39 @@
 <script>
   import { Button } from "$components/ui/button";
   import * as Accordion from "$components/ui/accordion";
+
+  let selectedProjects = [
+    {
+      name: "project-1",
+      title: "Web Scraper",
+      description:
+        "Description for the project that is about this long. Perhaps a little bit longer. Such",
+      tags: ["Next.js", "Node.js", "MongoDB"],
+      content: "Yes. It adheres to the WAI-ARIA design pattern.",
+      image: "https://www.picsum.photos/800/400",
+      href: "#",
+    },
+    {
+      name: "project-2",
+      title: "AI SEO Assistant",
+      description:
+        "Description for the project that is about this long. Perhaps a little bit longer. Such",
+      tags: ["Next.js", "OpenAI", "Prisma"],
+      content: "Yes. It adheres to the WAI-ARIA design pattern.",
+      image: "https://www.picsum.photos/800/400",
+      href: "#",
+    },
+    {
+      name: "project-3",
+      title: "Portfolio",
+      description:
+        "Description for the project that is about this long. Perhaps a little bit longer. Such",
+      tags: ["Svelte", "Shadcn", "Typescript"],
+      content: "Yes. It adheres to the WAI-ARIA design pattern.",
+      image: "https://www.picsum.photos/800/400",
+      href: "#",
+    },
+  ];
 </script>
 
 <section id="selected-projects" class="py-20 lg:py-32 flex flex-col">
@@ -48,60 +81,39 @@
       >
     </div>
     <Accordion.Root>
-      <Accordion.Item value="project-1">
-        <Accordion.Trigger class="text-2xl mt-4 pb-10 hover:no-underline"
-          ><div class="flex w-full justify-between">
-            <h1>Web Scraper</h1>
-            <p>
-              Description for the project that is about this long. Perhaps a
-              little bit longer. Such
-            </p>
-            <div>
-              <Button variant="ghost">Tech</Button>
-              <Button variant="ghost">Tech</Button>
+      {#each selectedProjects as project}
+        <Accordion.Item value={project.name}>
+          <Accordion.Trigger class="text-2xl mt-4 pb-10 hover:no-underline"
+            ><div class="flex w-full justify-between">
+              <div class="w-3/12 text-start"><h1>{project.title}</h1></div>
+              <div class="w-8/12 text-center">
+                <p>
+                  {project.description}
+                </p>
+              </div>
+              <div class="w-4/12 text-end">
+                {#each project.tags as tag}
+                  <Button variant="ghostGreen">{tag}</Button>
+                {/each}
+              </div>
+            </div></Accordion.Trigger
+          >
+          <Accordion.Content class="pt-4 pb-8">
+            <div class="flex justify-center relative">
+              <img
+                src={project.image}
+                alt={project.title}
+                class="rounded-2xl w-full object-cover"
+              />
+              <Button
+                variant="ghostGreenSolid"
+                class="absolute bottom-6 right-6 p-8"
+                >View Project
+              </Button>
             </div>
-          </div></Accordion.Trigger
-        >
-        <Accordion.Content class="pb-4">
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </Accordion.Content>
-      </Accordion.Item>
-      <Accordion.Item value="project-2">
-        <Accordion.Trigger class="text-2xl pb-10 mt-4 hover:no-underline"
-          ><div class="flex w-full justify-between">
-            <h1>AI SEO Assistant</h1>
-            <p>
-              Description for the project that is about this long. Perhaps a
-              little bit longer. Such
-            </p>
-            <div>
-              <Button variant="ghost">Tech</Button>
-              <Button variant="ghost">Tech</Button>
-            </div>
-          </div></Accordion.Trigger
-        >
-        <Accordion.Content class="pb-4">
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </Accordion.Content>
-      </Accordion.Item>
-      <Accordion.Item value="project-3">
-        <Accordion.Trigger class="text-2xl pb-10 mt-4 hover:no-underline"
-          ><div class="flex w-full justify-between">
-            <h3>Portfolio</h3>
-            <p>
-              Description for the project that is about this long. Perhaps a
-              little bit longer. Such
-            </p>
-            <div>
-              <Button variant="ghost">Tech</Button>
-              <Button variant="ghost">Tech</Button>
-            </div>
-          </div></Accordion.Trigger
-        >
-        <Accordion.Content class="pb-4">
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </Accordion.Content>
-      </Accordion.Item>
+          </Accordion.Content>
+        </Accordion.Item>
+      {/each}
     </Accordion.Root>
   </div>
 </section>
