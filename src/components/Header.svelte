@@ -1,5 +1,7 @@
 <script>
   import { Button } from "$components/ui/button";
+  import { Menu, Linkedin, Github, Instagram } from "lucide-svelte";
+  import * as Sheet from "$components/ui/sheet";
 
   export let y;
 
@@ -8,6 +10,11 @@
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ];
+
+  let showMenu = false;
+  const handleTabClick = (e) => {
+    console.log(e);
+  };
 </script>
 
 <header
@@ -20,18 +27,72 @@
     </h1>
   </a>
   <div class="sm:flex items-center gap-4 hidden">
-    {#each tabs as tab, index}
-      <a href={tab.href} class="duration-200 hover:text-green-400">
-        <p>{tab.name}</p>
-      </a>
-    {/each}
-
-    <a
-      href="https://www.linkedin.com/in/christianmack2023"
-      target="_blank"
-      class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950"
+    <Button href="/contact" target="_blank" variant="ghostGreen" class="p-8"
+      >Get in touch &rarr;</Button
     >
-      <h4 class="relative z-9">Get in touch</h4>
-    </a>
+    <Sheet.Root class="text-slate-100 border-none">
+      <Sheet.Trigger>
+        <Button variant="ghostGreen" class="p-8"><Menu /></Button>
+      </Sheet.Trigger>
+      <Sheet.Content
+        side="top"
+        class="flex bg-slate-950 text-slate-100 w-full items-center justify-center"
+      >
+        <div class="flex items-center w-full max-w-6xl">
+          <Sheet.Header class="w-full">
+            <Sheet.Title class="text-slate-400"
+              >Are you looking for my resume? <span
+                class="hover:text-slate-200 text-green-500 cursor-pointer"
+                >Download here</span
+              ></Sheet.Title
+            >
+            <Sheet.Description class="w-full py-10">
+              {#each tabs as tab, index}
+                <a
+                  href={tab.href}
+                  class="duration-200 text-slate-200 hover:text-green-500 py-4"
+                  on:click={() => handleTabClick()}
+                >
+                  <p class="text-7xl">{tab.name}</p>
+                </a>
+              {/each}
+            </Sheet.Description>
+            <Sheet.Footer
+              class="flex flex-row justify-between text-slate-950 py-8 w-full"
+            >
+              <div class="w-full">
+                <p class="text-slate-500 text-2xl font-medium">Follow Me.</p>
+                <div class="flex w-full lg:w-fit mt-6">
+                  <Button
+                    variant="link"
+                    href="https://www.linkedin.com/in/christianmack2023/"
+                    class="text-slate-300 hover:text-green-500 "
+                  >
+                    <Linkedin size={40} />
+                  </Button>
+                  <Button
+                    variant="link"
+                    href="https://github.com/christian-mack"
+                    class="text-slate-300 hover:text-green-500"
+                    ><Github size={40} /></Button
+                  >
+                  <Button
+                    variant="link"
+                    href="https://www.instagram.com/thechristianmack"
+                    class="text-slate-300 hover:text-green-500"
+                    ><Instagram size={40} /></Button
+                  >
+                </div>
+              </div>
+              <div class="w-full">
+                <p class="text-slate-500 text-2xl font-medium">
+                  Stay connected with me.
+                </p>
+              </div>
+            </Sheet.Footer>
+          </Sheet.Header>
+        </div>
+      </Sheet.Content>
+    </Sheet.Root>
   </div>
 </header>

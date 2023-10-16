@@ -14,9 +14,8 @@
       <Button
         href="/contact"
         target="_blank"
-        variant="ghost"
-        class="mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-600 text-slate-950 mt-14"
-        >Get in touch &rarr;</Button
+        variant="ghostGreenSolid"
+        class="p-8 mt-14">Get in touch &rarr;</Button
       >
     </div>
   </section>
