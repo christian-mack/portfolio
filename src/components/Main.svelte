@@ -1,6 +1,7 @@
 <script>
   import { Button } from "$components/ui/button";
   import SelectedProjects from "$components/SelectedProjects.svelte";
+  import AboutSummary from "$components/AboutSummary.svelte";
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -21,6 +22,6 @@
       </div>
     </div>
   </section>
-
+  <AboutSummary />
   <SelectedProjects />
 </main>

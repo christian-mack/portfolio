@@ -11,6 +11,7 @@
       tags: ["Next.js", "Node.js", "MongoDB"],
       image: "https://www.picsum.photos/800/400",
       href: "#",
+      github: "https://github.com/christian-mack/web-scraper",
     },
     {
       name: "project-2",
@@ -20,6 +21,7 @@
       tags: ["Next.js", "OpenAI", "Prisma"],
       image: "https://www.picsum.photos/800/400",
       href: "#",
+      github: "https://github.com/christian-mack/rank-rocket",
     },
     {
       name: "project-3",
@@ -29,42 +31,21 @@
       tags: ["Svelte", "Shadcn", "Typescript"],
       image: "https://www.picsum.photos/800/400",
       href: "#",
+      github: "https://github.com/christian-mack/portfolio",
     },
   ];
+
+  let active = false;
+
+  function toggle() {
+    console.log("BEFORE: ", active);
+    active = !active;
+    console.log("AFTER: ", active);
+  }
 </script>
 
-<section id="selected-projects" class="py-20 lg:py-32 flex flex-col">
-  <div class="flex gap-2 text-center">
-    <div class="flex w-3/5">
-      <h3 class="font-semibold text-4xl sm:text-5xl md:text-6xl text-start">
-        Design that sparks engagement and inspires action.
-      </h3>
-    </div>
-    <div class="flex flex-col w-2/5 items-start">
-      <p class="text-lg sm:text-xl mb-8 text-start">
-        I'm a full stack developer who specializes in building (and occasionally
-        designing) exceptional digital experiences. Currently, I'm focused on
-        building accessible, human-centered products at
-        <a
-          href="https://www.maverickdigital.xyz/"
-          target="_blank"
-          class="text-green-400">Maverick Digital Solutions</a
-        >
-        for a variety of clients.
-      </p>
-      <div class="flex">
-        <Button
-          href="/about"
-          target="_blank"
-          variant="ghost"
-          class="mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 outline outline-1 outline-green-500  text-green-500 hover:text-slate-950 hover:bg-green-500 mt-2"
-          >About Me</Button
-        >
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-40">
+<section id="selected-projects" class="py-5 lg:py-18 flex flex-col mb-32">
+  <div class="">
     <div
       class="flex w-full justify-between items-center border-b-2 pb-8 mb-2 border-slate-500"
     >
@@ -77,7 +58,7 @@
         >View all projects</Button
       >
     </div>
-    <Accordion.Root>
+    <Accordion.Root value={"project-1"}>
       {#each selectedProjects as project}
         <Accordion.Item value={project.name}>
           <Accordion.Trigger class="text-2xl mt-4 pb-10 hover:no-underline"
@@ -105,6 +86,7 @@
               <Button
                 variant="ghostGreenSolid"
                 class="absolute bottom-6 right-6 p-8"
+                href={project.github}
                 >View Project
               </Button>
             </div>
