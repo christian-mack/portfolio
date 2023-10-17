@@ -9,7 +9,6 @@
       description:
         "Description for the project that is about this long. Perhaps a little bit longer. Such",
       tags: ["Next.js", "Node.js", "MongoDB"],
-      content: "Yes. It adheres to the WAI-ARIA design pattern.",
       image: "https://www.picsum.photos/800/400",
       href: "#",
     },
@@ -19,7 +18,6 @@
       description:
         "Description for the project that is about this long. Perhaps a little bit longer. Such",
       tags: ["Next.js", "OpenAI", "Prisma"],
-      content: "Yes. It adheres to the WAI-ARIA design pattern.",
       image: "https://www.picsum.photos/800/400",
       href: "#",
     },
@@ -29,7 +27,6 @@
       description:
         "Description for the project that is about this long. Perhaps a little bit longer. Such",
       tags: ["Svelte", "Shadcn", "Typescript"],
-      content: "Yes. It adheres to the WAI-ARIA design pattern.",
       image: "https://www.picsum.photos/800/400",
       href: "#",
     },

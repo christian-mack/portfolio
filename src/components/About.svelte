@@ -8,13 +8,17 @@
     {
       title: "Full Stack Developer",
       company: "Maverick Digital Solutions",
-      dates: "2020 - 2021",
+      dates: "Aug 2023 - Present",
     },
-    { title: "Web Developer", company: "Prime Trust", dates: "2021 - 2022" },
+    {
+      title: "Web Developer",
+      company: "Prime Trust",
+      dates: "Jul 2022 - Aug 2023",
+    },
     {
       title: "Front-End Developer",
       company: "Foreign Languages for Kids",
-      dates: "2022 - 2023",
+      dates: "Jul 2021 - Jan 2022",
     },
   ];
 </script>
@@ -36,7 +40,7 @@
       <Button
         href="/contact"
         target="_blank"
-        variant="ghost"
+        variant="ghostGreenSolid"
         class="w-fit text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-600 text-slate-950 mt-14"
         >Let's Talk &rarr;</Button
       >
@@ -45,11 +49,11 @@
   <div class="py-12">
     <img src={AboutImage} alt="randomly generated" class="rounded-[24px]" />
   </div>
-  <ScrollText />
+  <!-- TODO: complete the animation and uncomment -->
+  <!-- <ScrollText /> -->
   <div class="my-28">
     <h3 class="text-5xl font-semibold mb-12 text-green-400">My Experience</h3>
     <Table.Root>
-      <!-- <Table.Caption>A list of your recent invoices.</Table.Caption> -->
       <Table.Header>
         <Table.Row />
       </Table.Header>

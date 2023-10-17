@@ -11,12 +11,14 @@
         <span class="text-slate-100 underline">full stack developer</span> that loves
         javascript.
       </h2>
-      <Button
-        href="/contact"
-        target="_blank"
-        variant="ghostGreenSolid"
-        class="p-8 mt-14">Get in touch &rarr;</Button
-      >
+      <div class="w-full justify-center">
+        <Button
+          href="/contact"
+          target="_blank"
+          variant="ghostGreenSolid"
+          class="p-8 mt-14">Get in touch &rarr;</Button
+        >
+      </div>
     </div>
   </section>
 

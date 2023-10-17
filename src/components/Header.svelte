@@ -41,19 +41,23 @@
         <div class="flex items-center w-full max-w-6xl">
           <Sheet.Header class="w-full">
             <Sheet.Title class="text-slate-400"
-              >Are you looking for my resume? <span
-                class="hover:text-slate-200 text-green-500 cursor-pointer"
-                >Download here</span
+              >Are you looking for my resume? <Button
+                variant="link"
+                href="./christian-mack-resume.pdf"
+                class="text-slate-200 hover:text-green-500 font-semibold cursor-pointer"
+                >Download here</Button
               ></Sheet.Title
             >
-            <Sheet.Description class="w-full py-10">
+            <Sheet.Description
+              class="w-full flex flex-col border-t-2 border-b-2 border-slate-700 pt-8 pb-9 gap-6"
+            >
               {#each tabs as tab, index}
                 <a
                   href={tab.href}
-                  class="duration-200 text-slate-200 hover:text-green-500 py-4"
+                  class="duration-200 text-slate-200 hover:text-green-500"
                   on:click={() => handleTabClick()}
                 >
-                  <p class="text-7xl">{tab.name}</p>
+                  <p class="text-8xl">{tab.name}</p>
                 </a>
               {/each}
             </Sheet.Description>

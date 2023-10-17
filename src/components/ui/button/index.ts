@@ -15,9 +15,9 @@ const buttonVariants = tv({
       ghost: "hover:bg-accent hover:text-accent-foreground",
       link: "text-primary underline-offset-4 hover:underline",
       ghostGreen:
-        "mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative rounded-full outline outline-1 outline-green-500 text-green-500 hover:text-slate-950 hover:bg-green-500  hover:text-accent-foreground",
+        "text-base sm:text-lg md:text-xl relative rounded-full outline outline-1 outline-green-500 text-green-500 hover:text-slate-950 hover:bg-green-500  hover:text-accent-foreground w-fit",
       ghostGreenSolid:
-        "mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-500 hover:bg-slate-950 text-slate-950 hover:text-green-500 hover:outline hover:outline-1 hover:outline-green-500",
+        "text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-500 hover:bg-slate-950 text-slate-950 hover:text-green-500 hover:outline hover:outline-1 hover:outline-green-500 w-fit",
     },
     size: {
       default: "h-10 px-4 py-2",

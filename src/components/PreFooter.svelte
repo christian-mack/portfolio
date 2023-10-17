@@ -13,10 +13,7 @@
     <h3 class="text-8xl max-w-6xl text-center font-semibold my-12">
       Want to create something awesome?
     </h3>
-    <Button
-      variant="ghost"
-      href="/contact"
-      class="mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 outline outline-1 outline-green-500  text-green-500 hover:text-slate-950 hover:bg-green-500 mt-2"
+    <Button variant="ghostGreen" href="/contact" class="py-8 px-10  mt-2"
       >Let's Talk</Button
     >
   </div>
