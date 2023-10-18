@@ -2,7 +2,6 @@
   import { Button } from "$components/ui/button";
   import * as Table from "$components/ui/table";
   import AboutImage from "$lib/assets/aboutplaceholder.jpeg";
-  import ScrollText from "./ScrollText.svelte";
 
   const experiences = [
     {
@@ -46,12 +45,10 @@
       >
     </div>
   </div>
-  <div class="py-12">
+  <div class="pt-12">
     <img src={AboutImage} alt="randomly generated" class="rounded-[24px]" />
   </div>
-  <!-- TODO: complete the animation and uncomment -->
-  <!-- <ScrollText /> -->
-  <div class="my-28">
+  <div class="mt-20">
     <h3 class="text-5xl font-semibold mb-12 text-green-400">My Experience</h3>
     <Table.Root>
       <Table.Header>

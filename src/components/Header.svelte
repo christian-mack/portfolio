@@ -6,14 +6,14 @@
   export let y;
 
   const tabs = [
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ];
 
   let showMenu = false;
-  const handleTabClick = (e) => {
-    console.log(e);
+  const handleTabClick = () => {
     showMenu = !showMenu;
   };
 </script>
@@ -56,7 +56,7 @@
                 <a
                   href={tab.href}
                   class="duration-200 text-slate-200 hover:text-green-500"
-                  on:click={() => (showMenu = false)}
+                  on:click={() => handleTabClick()}
                 >
                   <p class="text-8xl">{tab.name}</p>
                 </a>
