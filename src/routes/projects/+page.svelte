@@ -1,6 +1,7 @@
 <script>
   import { Button } from "$components/ui/button";
   import { data } from "$lib/data.ts";
+  import { ChevronsRight } from "lucide-svelte";
 </script>
 
 <section class="py-20">
@@ -30,7 +31,7 @@
               </div>
             </div>
             <Button href={project.github} variant="ghostGreen" class="p-8"
-              >View</Button
+              ><ChevronsRight /></Button
             >
           </div>
         </div>
