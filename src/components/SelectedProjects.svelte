@@ -1,39 +1,7 @@
 <script>
   import { Button } from "$components/ui/button";
   import * as Accordion from "$components/ui/accordion";
-
-  let selectedProjects = [
-    {
-      name: "project-1",
-      title: "Web Scraper",
-      description:
-        "Description for the project that is about this long. Perhaps a little bit longer. Such",
-      tags: ["Next.js", "Node.js", "MongoDB"],
-      image: "https://www.picsum.photos/800/400",
-      href: "#",
-      github: "https://github.com/christian-mack/web-scraper",
-    },
-    {
-      name: "project-2",
-      title: "AI SEO Assistant",
-      description:
-        "Description for the project that is about this long. Perhaps a little bit longer. Such",
-      tags: ["Next.js", "OpenAI", "Prisma"],
-      image: "https://www.picsum.photos/800/400",
-      href: "#",
-      github: "https://github.com/christian-mack/rank-rocket",
-    },
-    {
-      name: "project-3",
-      title: "Portfolio",
-      description:
-        "Description for the project that is about this long. Perhaps a little bit longer. Such",
-      tags: ["Svelte", "Shadcn", "Typescript"],
-      image: "https://www.picsum.photos/800/400",
-      href: "#",
-      github: "https://github.com/christian-mack/portfolio",
-    },
-  ];
+  import { data } from "$lib/data.ts";
 
   let active = false;
 
@@ -59,7 +27,7 @@
       >
     </div>
     <Accordion.Root value={"project-1"}>
-      {#each selectedProjects as project}
+      {#each data as project}
         <Accordion.Item value={project.name}>
           <Accordion.Trigger class="text-2xl mt-4 pb-10 hover:no-underline"
             ><div class="flex w-full justify-between">
