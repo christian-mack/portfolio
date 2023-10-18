@@ -4,7 +4,7 @@
 </script>
 
 <section class="py-20">
-  <h1 class="text-9xl text-center mb-20">
+  <h1 class="text-9xl text-center font-semibold mb-20">
     What I've been <span class="text-green-500">working on</span> so far
   </h1>
   <div class="w-full">
