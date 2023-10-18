@@ -4,12 +4,18 @@
   import { data } from "$lib/data.ts";
 </script>
 
-<section id="selected-projects" class="py-5 lg:py-18 flex flex-col mb-32">
+<section
+  id="selected-projects"
+  class="py-2 lg:py-18 flex flex-col mb-20 md:mb-32"
+>
   <div class="">
-    <div class="flex w-full justify-between items-center pb-8 mb-2">
-      <h3 class="text-4xl font-semibold">Selected projects</h3>
-      <Button variant="ghostGreen" target="_blank" href="/projects" class="p-8"
-        >View all projects</Button
+    <div class="flex w-full md:justify-between items-center md:pb-8 md:mb-2">
+      <h3 class="text-3xl md:text-4xl font-semibold">Selected projects</h3>
+      <Button
+        variant="ghostGreen"
+        target="_blank"
+        href="/projects"
+        class="p-8 hidden md:flex">View all projects</Button
       >
     </div>
 
@@ -26,13 +32,15 @@
               {#each project.tags as tag}
                 <Badge
                   variant="secondary"
-                  class="mr-3 text-sm bg-slate-200 hover:bg-slate-200 text-slate-950"
+                  class="mr-3 md:text-sm bg-slate-200 hover:bg-slate-200 text-slate-950"
                   >{tag}</Badge
                 >
               {/each}
             </div>
           </div>
-          <div class="flex text-start justify-between w-full py-8">
+          <div
+            class="flex flex-col text-start md:flex-row md:items-center justify-between w-full py-8"
+          >
             <div>
               <h1 class="text-3xl text-slate-300">{project.title}</h1>
               <p class="text-slate-400">

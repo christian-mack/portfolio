@@ -19,21 +19,24 @@
 </script>
 
 <header
-  class={"top-0 duration-200 flex items-center justify-between " +
-    (y > 0 ? " py-4 bg-slate-950" : " py-6 bg-transparent border-transparent")}
+  class={"top-0 duration-200 flex items-center justify-between px-4 " +
+    (y > 0 ? "py-4 bg-slate-950" : "py-6 bg-transparent border-transparent")}
 >
   <a href="/" class="cursor-pointer">
     <h1 class="poppins text-2xl">
       <b class="font-bold text-green-400">christian</b>mack
     </h1>
   </a>
-  <div class="sm:flex items-center gap-4 hidden">
-    <Button href="/contact" target="_blank" variant="ghostGreen" class="p-8"
-      >Get in touch &rarr;</Button
+  <div class="sm:flex items-center gap-4">
+    <Button
+      href="/contact"
+      target="_blank"
+      variant="ghostGreen"
+      class="hidden sm:flex p-8">Get in touch &rarr;</Button
     >
     <Sheet.Root class="text-slate-100 border-none" bind:open={showMenu}>
       <Sheet.Trigger>
-        <Button variant="ghostGreen" class="p-8"><Menu /></Button>
+        <Button variant="ghostGreen" class="md:p-8"><Menu /></Button>
       </Sheet.Trigger>
       <Sheet.Content
         side="top"

@@ -10,7 +10,7 @@
       <li><a href="/contact" class="hover:text-slate-200">CONTACT</a></li>
     </ul>
 
-    <h3 class="text-8xl max-w-6xl text-center font-semibold my-12">
+    <h3 class="text-2xl lg:text-8xl max-w-6xl text-center font-semibold my-12">
       Want to create something awesome?
     </h3>
     <Button variant="ghostGreen" href="/contact" class="py-8 px-10  mt-2"

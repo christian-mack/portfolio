@@ -20,8 +20,11 @@
 	"dependencies": {
 		"bits-ui": "^0.5.7",
 		"clsx": "^2.0.0",
+		"formsnap": "^0.2.0",
 		"lucide-svelte": "^0.286.0",
+		"sveltekit-superforms": "^1.8.0",
 		"tailwind-merge": "^1.14.0",
-		"tailwind-variants": "^0.1.14"
+		"tailwind-variants": "^0.1.14",
+		"zod": "^3.22.4"
 	}
 }

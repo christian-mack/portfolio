@@ -3,10 +3,10 @@
   import { Button } from "$components/ui/button";
 </script>
 
-<footer class="py-12 sm:py-20 px-12 lg:px-48 bg-black">
+<footer class="py-8 sm:py-12 md:py-20 px-12 lg:px-48 bg-black">
   <div class="flex flex-col items-center w-full">
     <div
-      class="flex flex-col lg:flex-row justify-between items-start w-full mb-4"
+      class="flex flex-col lg:flex-row justify-between items-start w-full mb-2 md:mb-4"
     >
       <p class=" text-slate-500 text-md lg:text-2xl mb-6">
         Stay connected with me.
@@ -18,13 +18,13 @@
       />
     </div>
     <div
-      class="flex flex-col lg:flex-row lg:justify-between w-full items-center mb-8 mt-10"
+      class="flex flex-col lg:flex-row lg:justify-between w-full items-center mb-4 mt-5 md:mb-8 md:mt-10"
     >
       <div class="flex flex-col w-full lg:w-3/5">
-        <p class="text-5xl mb-2 font-bold">
+        <p class="text-xl md:text-3xl lg:text-5xl mb-2 font-bold">
           <b class="text-green-400">christian</b>mack
         </p>
-        <p class="text-xl mt-2 font-semibold text-slate-300">
+        <p class="text-lg lg:text-xl mt-2 font-semibold text-slate-300">
           A freelance software developer based in Maryland.
         </p>
       </div>
@@ -48,7 +48,7 @@
     <div
       class="flex justify-center lg:justify-start w-full text-xs lg:text-base mt-10"
     >
-      <p class="font-light text-slate-600 text-sm">
+      <p class="font-light text-slate-600 text-[10px] md:text-sm">
         © 2023 Christian Mack All rights reserved.
       </p>
     </div>
