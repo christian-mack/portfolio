@@ -14,6 +14,7 @@
   let showMenu = false;
   const handleTabClick = (e) => {
     console.log(e);
+    showMenu = !showMenu;
   };
 </script>
 
@@ -30,7 +31,7 @@
     <Button href="/contact" target="_blank" variant="ghostGreen" class="p-8"
       >Get in touch &rarr;</Button
     >
-    <Sheet.Root class="text-slate-100 border-none">
+    <Sheet.Root class="text-slate-100 border-none" bind:open={showMenu}>
       <Sheet.Trigger>
         <Button variant="ghostGreen" class="p-8"><Menu /></Button>
       </Sheet.Trigger>
@@ -55,7 +56,7 @@
                 <a
                   href={tab.href}
                   class="duration-200 text-slate-200 hover:text-green-500"
-                  on:click={() => handleTabClick()}
+                  on:click={() => (showMenu = false)}
                 >
                   <p class="text-8xl">{tab.name}</p>
                 </a>
