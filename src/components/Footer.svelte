@@ -11,18 +11,22 @@
       <p class=" text-slate-500 text-md lg:text-2xl mb-6">
         Stay connected with me.
       </p>
-      <input
+      <p class=" text-slate-200 text-md lg:text-2xl mb-6">
+        christian.ak.mack<span class="text-slate-400">@gmail.com</span>
+      </p>
+      <!-- TODO: replace this with a working form -->
+      <!-- <input
         type="text"
         class="text-white w-full lg:w-1/3 bg-black border-b-2 border-slate-500 pb-4"
         placeholder="Enter your email"
-      />
+      /> -->
     </div>
     <div
       class="flex flex-col lg:flex-row lg:justify-between w-full items-center mb-4 mt-5 md:mb-8 md:mt-10"
     >
       <div class="flex flex-col w-full lg:w-3/5">
         <p class="text-xl md:text-3xl lg:text-5xl mb-2 font-bold">
-          <b class="text-green-400">christian</b>mack
+          <b class="text-green-500">christian</b>mack
         </p>
         <p class="text-lg lg:text-xl mt-2 font-semibold text-slate-300">
           A freelance software developer based in Maryland.

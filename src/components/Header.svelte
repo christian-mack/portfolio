@@ -24,7 +24,7 @@
 >
   <a href="/" class="cursor-pointer">
     <h1 class="poppins text-2xl">
-      <b class="font-bold text-green-400">christian</b>mack
+      <b class="font-bold text-green-500">christian</b>mack
     </h1>
   </a>
   <div class="sm:flex items-center gap-4">
@@ -32,11 +32,11 @@
       href="/contact"
       target="_blank"
       variant="ghostGreen"
-      class="hidden sm:flex p-8">Get in touch &rarr;</Button
+      class="hidden sm:flex p-6 lg:p-8">Get in touch &rarr;</Button
     >
     <Sheet.Root class="text-slate-100 border-none" bind:open={showMenu}>
       <Sheet.Trigger>
-        <Button variant="ghostGreen" class="md:p-8"><Menu /></Button>
+        <Button variant="ghostGreen" class="p-6 lg:p-8"><Menu /></Button>
       </Sheet.Trigger>
       <Sheet.Content
         side="top"
@@ -61,7 +61,7 @@
                   class="duration-200 text-slate-200 hover:text-green-500"
                   on:click={() => handleTabClick()}
                 >
-                  <p class="text-8xl">{tab.name}</p>
+                  <p class="text-6xl lg:text-8xl text-start">{tab.name}</p>
                 </a>
               {/each}
             </Sheet.Description>
@@ -70,7 +70,9 @@
             >
               <div class="w-full">
                 <p class="text-slate-500 text-2xl font-medium">Follow Me.</p>
-                <div class="flex w-full lg:w-fit mt-6">
+                <div
+                  class="flex w-full lg:w-fit mt-6 justify-between md:justify-start"
+                >
                   <Button
                     variant="link"
                     href="https://www.linkedin.com/in/christianmack2023/"
@@ -92,7 +94,7 @@
                   >
                 </div>
               </div>
-              <div class="w-full">
+              <div class="w-full hidden md:flex">
                 <p class="text-slate-500 text-2xl font-medium">
                   Stay connected with me.
                 </p>

@@ -18,7 +18,7 @@
       <a
         href="https://www.maverickdigital.xyz/"
         target="_blank"
-        class="text-green-400">Maverick Digital Solutions</a
+        class="text-green-500">Maverick Digital Solutions</a
       >
       for a variety of clients.
     </p>

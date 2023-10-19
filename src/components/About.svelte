@@ -22,10 +22,10 @@
   ];
 </script>
 
-<section id="about" class="py-12">
-  <div><p class="text-xl font-medium mb-1">About Me</p></div>
-  <div class="flex">
-    <h1 class="text-8xl font-semibold">
+<section id="about" class="py-12 px-4">
+  <div><p class="text-xl font-medium mb-1 hidden md:flex">About Me</p></div>
+  <div class="flex flex-col md:flex-row gap-5 md:gap-10">
+    <h1 class="text-3xl md:text-6xl xl:text-8xl font-semibold">
       Passionate developer on a <span class="text-slate-400">mission</span>
     </h1>
 
@@ -40,7 +40,7 @@
         href="/contact"
         target="_blank"
         variant="ghostGreenSolid"
-        class="w-fit text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-600 text-slate-950 mt-14"
+        class="w-fit text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-600 text-slate-950 mt-7 md:mt-14"
         >Let's Talk &rarr;</Button
       >
     </div>
@@ -49,7 +49,9 @@
     <img src={AboutImage} alt="randomly generated" class="rounded-[24px]" />
   </div>
   <div class="mt-20">
-    <h3 class="text-5xl font-semibold mb-12 text-green-400">My Experience</h3>
+    <h3 class="text-4xl md:text-5xl font-semibold mb-6 md:mb-12 text-green-500">
+      My Experience
+    </h3>
     <Table.Root>
       <Table.Header>
         <Table.Row />
@@ -58,9 +60,9 @@
         {#each experiences as experience}
           <Table.Row class="hover:bg-transparent">
             <Table.Cell
-              class="font-medium flex w-full justify-between items-end py-8 px-0"
+              class="font-medium flex w-full justify-between md:items-end py-8 px-0 flex-col md:flex-row md:gap-5"
             >
-              <div>
+              <div class="flex flex-col">
                 <p class="mb-3 text-2xl font-medium">{experience.title}</p>
                 <p class="text-lg font-light text-slate-300">
                   {experience.company}
