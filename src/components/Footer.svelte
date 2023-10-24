@@ -6,22 +6,6 @@
 <footer class="py-8 sm:py-12 md:py-20 px-12 lg:px-48 bg-black">
   <div class="flex flex-col items-center w-full">
     <div
-      class="flex flex-col lg:flex-row justify-between items-start w-full mb-2 md:mb-4"
-    >
-      <p class=" text-slate-500 text-md lg:text-2xl mb-6">
-        Stay connected with me.
-      </p>
-      <p class=" text-slate-200 text-md lg:text-2xl mb-6">
-        christian.ak.mack<span class="text-slate-400">@gmail.com</span>
-      </p>
-      <!-- TODO: replace this with a working form -->
-      <!-- <input
-        type="text"
-        class="text-white w-full lg:w-1/3 bg-black border-b-2 border-slate-500 pb-4"
-        placeholder="Enter your email"
-      /> -->
-    </div>
-    <div
       class="flex flex-col lg:flex-row lg:justify-between w-full items-center mb-4 mt-5 md:mb-8 md:mt-10"
     >
       <div class="flex flex-col w-full lg:w-3/5">
@@ -29,7 +13,7 @@
           <b class="text-green-500">christian</b>mack
         </p>
         <p class="text-lg lg:text-xl mt-2 font-semibold text-slate-300">
-          A freelance software developer based in Maryland.
+          A freelance software developer roaming the 🌎
         </p>
       </div>
       <div class="flex w-full lg:w-fit gap-4 mt-2">

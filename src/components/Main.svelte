@@ -14,7 +14,7 @@
       </h2>
       <div class="w-full justify-center">
         <Button
-          href="/contact"
+          href="mailto:christian.ak.mack@gmail.com"
           target="_blank"
           variant="ghostGreenSolid"
           class="p-8 mt-14">Get in touch &rarr;</Button

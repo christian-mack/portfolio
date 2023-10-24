@@ -5,7 +5,7 @@
 
   const experiences = [
     {
-      title: "Full Stack Developer",
+      title: "Full Stack Developer - Freelance",
       company: "Maverick Digital Solutions",
       dates: "Aug 2023 - Present",
     },
@@ -37,7 +37,7 @@
       </p>
 
       <Button
-        href="/contact"
+        href="mailto:christian.ak.mack@gmail.com"
         target="_blank"
         variant="ghostGreenSolid"
         class="w-fit text-base sm:text-lg md:text-xl relative rounded-full py-8 px-10 bg-green-600 text-slate-950 mt-7 md:mt-14"

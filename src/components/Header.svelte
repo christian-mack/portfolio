@@ -9,7 +9,6 @@
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
   ];
 
   let showMenu = false;
@@ -29,7 +28,7 @@
   </a>
   <div class="sm:flex items-center gap-4">
     <Button
-      href="/contact"
+      href="mailto:christian.ak.mack@gmail.com"
       target="_blank"
       variant="ghostGreen"
       class="hidden sm:flex p-6 lg:p-8">Get in touch &rarr;</Button
@@ -46,10 +45,9 @@
           <Sheet.Header class="w-full">
             <Sheet.Title class="text-slate-400"
               >Are you looking for my resume? <Button
-                variant="link"
+                variant="ghostGreenSolid"
                 href="./christian-mack-resume.pdf"
-                class="text-slate-200 hover:text-green-500 font-semibold cursor-pointer"
-                >Download here</Button
+                class="p-4 font-semibold cursor-pointer">Download here</Button
               ></Sheet.Title
             >
             <Sheet.Description
@@ -66,7 +64,7 @@
               {/each}
             </Sheet.Description>
             <Sheet.Footer
-              class="flex flex-row justify-between text-slate-950 py-8 w-full"
+              class="flex flex-col md:flex-row justify-between text-slate-950 py-8 w-full"
             >
               <div class="w-full">
                 <p class="text-slate-500 text-2xl font-medium">Follow Me.</p>
@@ -94,12 +92,21 @@
                   >
                 </div>
               </div>
-              <div class="w-full hidden md:flex">
-                <p class="text-slate-500 text-2xl font-medium">
+              <div class="w-full md:flex flex-col">
+                <p class="text-slate-500 text-2xl font-medium pt-8 md:pt-0">
                   Stay connected with me.
                 </p>
-              </div>
-            </Sheet.Footer>
+                <div
+                  class="flex w-full lg:w-fit mt-6 justify-center md:justify-between"
+                >
+                  <Button
+                    variant="ghostGreen"
+                    href="mailto:christian.ak.mack@gmail.com"
+                    class="p-8">Send me an email</Button
+                  >
+                </div>
+              </div></Sheet.Footer
+            >
           </Sheet.Header>
         </div>
       </Sheet.Content>
